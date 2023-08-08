@@ -1,11 +1,15 @@
-# Welcome to GitHub Desktop!
+# Programiranje 1 2023/24
 
-## stavka 1
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
 
-## stavka 2
+## Uvod
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
 
-pre---.
+
+## Petlja
+
+https://petlja.org/biblioteka/r/kursevi/Zbirka
+
+
+
+## Dalje...
