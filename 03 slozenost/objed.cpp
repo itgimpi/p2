@@ -39,6 +39,5 @@ int main()
     for(i = 0; i < n+m; i++) {
         cout << p[i] << ' ';
     }
-    cout << endl;
     return 0;
 }
