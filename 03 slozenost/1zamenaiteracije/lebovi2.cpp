@@ -5,10 +5,4 @@ using namespace std;
 int main() {
     int n;
     
-    cout << n / 3 + 1;
-    
-    
-
-
-    
- }
+    cout << n / 3 + 1;  }
