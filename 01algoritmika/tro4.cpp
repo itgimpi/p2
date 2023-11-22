@@ -5,6 +5,10 @@ using namespace std;
 // trosi se memorija n za nizove levo, desno, sred
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
     int n, l, d;
     int pl = 0, i, pd;
     cin >> n;
