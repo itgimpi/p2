@@ -7,10 +7,11 @@ vector<ll> delioci( ll n ) {
     vector<ll>res;
     res.push_back(1);
     if (n > 1) res.push_back(n);
+
     for ( int i = 2; i < n; i++ )
-        if ( n % i == 0 ) {
+        if ( n % i == 0 )
             res.push_back(i);
-        }
+
     return res; }
 
 int main() {
