@@ -17,6 +17,7 @@ int main() {
         for ( int d = l; d < n && a[d] == 1; d++ ) 
             duz++;
         naj = max(naj, duz);
+        // if(duz > naj) { naj = duz; }
     }
 
     cout << naj;
