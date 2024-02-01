@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 #define N 100
-// Dobro resenje jer vodi racuna o ogranicenjima
+// Vodi racuna o ogranicenjima
 int stek[N]; // Staticki niz sa 100 el, kapacitet steka
 int sp; // pokazivac na mesto gde ide prvi sledeci el. inicijalno je 0
 
@@ -31,6 +31,7 @@ int main() {
     oduzmi(); vrh();
     oduzmi(); vrh();
     oduzmi(); vrh();
+    // empty stack
     for (int i = 0; i <= 110; i++) {
         dodaj(i+1); vrh();
     }
