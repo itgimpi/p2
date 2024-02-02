@@ -12,7 +12,7 @@ int main() {
     s.pop(); // skloni sa vrha,                        s: 1, 2
     cout << s.top() << endl; // 2
     s.pop(); cout << s.top() << endl; //               s: 1
-    s.pop(); cout << s.top() << endl; //               s: 
+    s.pop(); //cout << s.top() << endl; //               s: 
 
     s.push(1); s.push(2); s.push(3);//                 s: 1, 2, 3
     while (!s.empty()) {            // sve dok stek nije prazan...

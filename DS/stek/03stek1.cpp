@@ -18,7 +18,7 @@ int main() {
     baci(1); vrh();
     baci(2); vrh();
     baci(3); vrh();
-    izbaci(); vrh();
-    izbaci(); vrh();
-    izbaci(); vrh();
+    izbaci(); vrh(); // 2
+    izbaci(); vrh(); // 1
+    izbaci(); vrh(); // ? <- problem
     return 0; }
