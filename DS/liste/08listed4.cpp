@@ -32,19 +32,17 @@ void nakraj(int podatak){ // posle zadnjeg elementa
     novi->data = podatak;
     novi->next = nullptr;
     if ( head == nullptr ) { // empty
-        novi.prev = nullptr;
+        novi->prev = nullptr;
         head = novi;
         return; }
     // nonempty
     // find the last element
     node *zadnji = head;
-    while (  )
-
-    novi->next = head;
-    novi->prev = nullptr;
-    if (head != nullptr)
-        head->prev = novi;
-    head = novi; }
+    while ( zadnji->next != nullptr )
+        zadnji = zadnji->next;
+    zadnji->next = novi;
+    novi->prev = zadnji;
+    return; }
 
 void ispis(){
     node *n = head;
@@ -70,6 +68,8 @@ int main() {
     napocetak(3); ispis();
     oduzmi(); ispis();
     oduzmi(); ispis();oduzmi(); ispis();oduzmi(); ispis();
+    nakraj(1); ispis();
+    nakraj(2); ispis();
     //oslobodi();
     
     //ispis();
