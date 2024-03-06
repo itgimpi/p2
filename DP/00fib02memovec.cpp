@@ -2,12 +2,11 @@
 using namespace std;
 typedef unsigned long long ull;
 
-// Memoization using Map
+// Memoization using Vector
 
-ull fib(int n, unordered_map<int,ull>&memo){
-    auto it = memo.find(n);
-    if (it!=memo.end()) // za taj broj je izracunat fib...
-        return it->second; // vrati vrednost a ne pozivaj novu f-ju
+ull fib(int n, vector<ull>&memo){
+    if (memo[n]!=-1) // za broj n je izracunat fib...
+        return memo[n]; // vrati vrednost a ne pozivaj novu f-ju
     // nije izracunat fib. za m...
     if (n==0) return memo[0]=1; // upisi res. u mapu
     if (n==1) return memo[1]=1; // i vrati vrednost
@@ -16,6 +15,6 @@ ull fib(int n, unordered_map<int,ull>&memo){
 
 int main() {
     int n; cin >> n;
-    unordered_map<int, ull>memo; // n -> fib(n), O(1)
+    vector<ull>memo(n+1, -1); // -1, nije izracunato
     cout << fib(n, memo);
     return 0; }
